@@ -6,7 +6,7 @@ public class FindNumOfProductLess {
             return 0;
         } 
         
-        int cnt = 0;
+        int resultCount = 0;
         
         int product = 1;
         
@@ -19,8 +19,8 @@ public class FindNumOfProductLess {
                 product /= nums[left++];
             }
             
-            cnt += (right - left + 1);
+            resultCount += (right - left + 1);
         }
-        return cnt;        
+        return resultCount;        
     }
 }
