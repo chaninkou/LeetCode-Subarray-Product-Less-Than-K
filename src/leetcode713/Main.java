@@ -12,6 +12,9 @@ public class Main {
 		
 		System.out.println("K: " + k);
 		
+		FindNumOfProductLess solution = new FindNumOfProductLess();
+		
+		System.out.println(solution.numSubarrayProductLessThanK(nums, k));
 		
 	}
 }

@@ -14,12 +14,18 @@ public class FindNumOfProductLess {
         
         for (int right = 0; right < nums.length; right++) {
             product *= nums[right];
+            System.out.println("product: " + product);
+          
             
             while (left <= right && product >= k) {
                 product /= nums[left++];
+                System.out.println("product divided: : " + product);
+
             }
             
             resultCount += (right - left + 1);
+            System.out.println(resultCount);
+
         }
         return resultCount;        
     }
