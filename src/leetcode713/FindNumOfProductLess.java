@@ -19,12 +19,12 @@ public class FindNumOfProductLess {
             
             while (left <= right && product >= k) {
                 product /= nums[left++];
-                System.out.println("product divided: : " + product);
+                System.out.println("Over limit: " + product);
 
             }
             
             resultCount += (right - left + 1);
-            System.out.println(resultCount);
+            System.out.println("RESULT: " + resultCount);
 
         }
         return resultCount;        
